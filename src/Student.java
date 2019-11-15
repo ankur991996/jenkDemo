@@ -1,8 +1,12 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Student {
 	@Test
 	public void DemoM() {
-		System.out.println("Hi");
+		System.setProperty("webdriver.chrome.driver", ".\\jar\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.google.com");
 	}
 }
